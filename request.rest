@@ -1,0 +1,33 @@
+POST   http://localhost:3000/movies
+content-type: application/json 
+
+{ 
+  "title": "Tenet",
+  "year": 2020,
+  "genres": ["action", "mind blowing"]
+}
+
+###
+DELETE http://localhost:3000/movies/1
+
+###
+GET http://localhost:3000/movies/
+
+###
+PATCH http://localhost:3000/movies/1
+
+content-type: application/json 
+
+{ 
+  "year": 3333,
+}
+
+###
+POST   http://localhost:3000/movies
+content-type: application/json 
+
+{ 
+  "year": 2020,
+  "genres": ["action", "mind blowing"],
+  "ff": "hack"
+}
